@@ -2,6 +2,7 @@ from mapSolution import mapSolution
 from naive_solution import naive_solution
 from n_log_n import n_log_n
 from arrayLockUpSolution import arrayLockUpSolution
+from factorial_solution import factorial_solution
 from matplotlib import pyplot as plt
 import random
 import pandas as pd
@@ -11,7 +12,8 @@ solutionsFunctions = {
     'Naive Solution': naive_solution,
     'Binary Search Solution': n_log_n,
     'Dictionary lookup': mapSolution,
-    'Array lookup': arrayLockUpSolution
+    'Array lookup': arrayLockUpSolution,
+    'Factorial solution': factorial_solution
 }
 
 def main():
@@ -19,9 +21,10 @@ def main():
         'Naive Solution': [],
         'Binary Search Solution': [],
         'Dictionary lookup': [],
-        'Array lookup': []
+        'Array lookup': [],
+        'Factorial solution': []
     }
-    for n in range(1, 1000):
+    for n in range(1, 100):
         arr = [random.randrange(-100, 100) for _ in range(n+1)]
         arrForArrayLookup = [random.randrange(0, 200) for _ in range(n+1)]
         target = random.randrange(-100, 100)
@@ -45,11 +48,6 @@ def main():
     plt.title('Execution times')
     plt.show()
 
-
-def y():
-    t = n_log_n([1, 9, 5, 0, 20, -4, 12, 16, 7], 12)
-    t.sort()
-    print(t)
 
 
 if __name__ == '__main__':

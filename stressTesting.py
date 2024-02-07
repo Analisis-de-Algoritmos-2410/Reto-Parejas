@@ -3,11 +3,13 @@ from naive_solution import naive_solution
 from n_log_n import n_log_n
 from arrayLockUpSolution import arrayLockUpSolution
 from mapSolution import mapSolution
+from factorial_solution import factorial_solution
 
 solutionsFunctions = {
     'Binary Search Solution': n_log_n,
     'Dictionary lookup': mapSolution,
-    'Array lookup': arrayLockUpSolution
+    'Array lookup': arrayLockUpSolution,
+    'Factorial solutoion': factorial_solution
 }
 
 

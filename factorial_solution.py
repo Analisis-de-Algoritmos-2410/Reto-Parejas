@@ -9,4 +9,6 @@ def factorial_solution(lst, target):
             if i not in seen and (i[1], i[0]) not in seen:
                 retorno.add(i)
                 seen.add(i)
+
+    retorno = list(retorno)
     return retorno

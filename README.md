@@ -34,8 +34,8 @@ El comportamiento asintotico de esta solución es $\Theta(n)$ ya que siempre hay
 
 En caso de que se tuviera valores negativos, entonces se tendría que usar un `map` o alguna estractura que pudiera referenciar $a_i$ como llave o indice. Sin embargo, con estructuras como estas las operaciones se hacen en $\mathcal{O}(\log n)$ entonces la complejidad quedaría igual que la anterior solución (**Dicha solucion si permitiría numeros repetidos**).
 
-### Map Solution $\mathcal{O}(n \log n)$
+### Map Solution $\mathcal{O}(n \log n)$ C++ version / $\mathcal{O}(n)$ Python version
 
 Esta es la solucion discutida al final de la anterior solucion, sin embargo, esta solucion utiliza una estructura adicional para poder llevar los indices de los enteros negativos.
 
-Dependiendo de la estructura, se define la complejidad, ya que si el acceso a los elementos de la estructura se hace en $\mathcal{O}(\log n)$ entonces la complejidad sería $\mathcal{O}(n \log n)$ pero si la estructura accede a los elementos de manera constante (Como el array en la solucion anterior $\mathcal{O}(1)$) entonces la complejidad en dicho caso si quedaría $\Theta(n)$.
+Dependiendo de la estructura, se define la complejidad, ya que si el acceso a los elementos de la estructura se hace en $\mathcal{O}(\log n)$ entonces la complejidad sería $\mathcal{O}(n \log n)$ pero si la estructura accede a los elementos de manera constante (Como el array en la solucion anterior $\mathcal{O}(1)$ o el diccionario de Python) entonces la complejidad en dicho caso si quedaría $\Theta(n)$.

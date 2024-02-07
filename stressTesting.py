@@ -28,11 +28,10 @@ def stressTesting(threshold):
             if res != correct:
                 print(f"WRONG ANSWER in {key}")
                 print(arr, target, sep='|')
-                print(correct, res, sep='|')
+                print(correct)
+                print(res)
                 return
     print(f"{threshold} test passed.")
 
 if __name__ == "__main__":
-    print("Indique los casos de prueba deseados.")
-    t = int(input())
-    stressTesting(t)
+    stressTesting(int(input("Indique los casos de prueba deseados: ")))

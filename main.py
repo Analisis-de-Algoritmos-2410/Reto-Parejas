@@ -24,11 +24,10 @@ def main():
         'Array lookup': [],
         'Factorial solution': []
     }
-    for n in range(1, 100):
+    for n in range(1, 65):
         arr = [random.randrange(-100, 100) for _ in range(n+1)]
         arrForArrayLookup = [random.randrange(0, 200) for _ in range(n+1)]
         target = random.randrange(-100, 100)
-
         for key in solutionsFunctions:
             start = time.perf_counter()
             if key == 'Array lookup':

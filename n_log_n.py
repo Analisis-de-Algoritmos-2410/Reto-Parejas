@@ -13,7 +13,7 @@ def binary_search(inf, sup, list, tar):
 def n_log_n(arr, tar):
   ans = set()
   arr.sort()
-  for i in range(len(arr)//2):
+  for i in range(len(arr)):
     aj = binary_search(0, len(arr)-1, arr, tar- arr[i])
     if aj != -1 and arr[i] != aj:
       ans.add((min(arr[i], aj), max(aj, arr[i])))

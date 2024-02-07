@@ -5,7 +5,7 @@ def mapSolution(arr, target):
     ans = []
     for item in arr:
         if lockup[item] > 0:
-            ans.append((item, target-item))
+            ans.append((min(item, target-item), max(item, target-item)))
         else:
             lockup[target-item] += 1
     return ans

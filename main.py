@@ -46,7 +46,10 @@ def main():
     plt.show()
 
 
-
+def y():
+    t = n_log_n([1, 9, 5, 0, 20, -4, 12, 16, 7], 12)
+    t.sort()
+    print(t)
 
 
 if __name__ == '__main__':
